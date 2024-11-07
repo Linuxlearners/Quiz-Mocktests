@@ -1,0 +1,183 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #87CEFA; /* Light sky blue background */
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Ensure the title and quiz container stack vertically */
+    justify-content: flex-start; /* Align items from the top */
+    align-items: center; /* Center horizontally */
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling for the title at the top */
+.module-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0; /* Adds space above and below the title */
+    color: #333;
+}
+
+/* Quiz container styling */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 800px; /* Slightly wider for a comfortable layout */
+    max-width: 90%; /* Responsive design for smaller screens */
+}
+
+/* Header area with the questions remaining */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Styling for the remaining questions text */
+#remaining {
+    font-size: 16px;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styling for the question text */
+#question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5; /* Better readability */
+    color: #333; /* Darker text color for better contrast */
+}
+
+/* Styling for the individual options */
+.option {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #212529; /* Dark grey text */
+    border: 1px solid #ccc; /* Border to give structure */
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+/* Hover effect for options */
+.option:hover {
+    background-color: #e2e6ea; /* Slightly darker background on hover */
+}
+
+/* Correct answer styling */
+.correct {
+    background-color: #28a745 !important; /* Green background for correct answer */
+    color: white; /* Ensuring text is readable on green */
+}
+
+/* Incorrect answer styling */
+.incorrect {
+    background-color: #dc3545 !important; /* Red background for incorrect answer */
+    color: white; /* Ensuring text is readable on red */
+}
+
+/* Quiz container background change for wrong answer */
+.quiz-container.incorrect {
+    background-color: #ffcccb; /* Light red background when the wrong answer is selected */
+}
+
+/* Navigation buttons styling */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+/* Button base styles */
+.btn {
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button specific styles */
+#prev {
+    background-color: #6c757d; /* Grey background */
+}
+
+#restart {
+    background-color: #007bff; /* Blue background */
+}
+
+#submit {
+    background-color: #28a745; /* Green background */
+}
+
+#next {
+    background-color: #007bff; /* Blue background for consistency */
+}
+
+/* Hover effects for buttons */
+#prev:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+}
+
+#restart:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#submit:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+#next:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Sidebar for question status */
+.sidebar {
+    margin-top: 20px;
+}
+
+/* Question status section (bubbles) */
+#status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Bubbles for each question's status */
+.bubble {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Bubble color for completed questions */
+.completed {
+    background-color: #28a745;
+}
+
+/* Bubble color for skipped questions */
+.skipped {
+    background-color: #007bff;
+}
+
+/* Bubble color for incorrect questions */
+.incorrect {
+    background-color: #dc3545;
+}
