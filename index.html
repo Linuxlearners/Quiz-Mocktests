@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select a Quiz</title>
+    <title>Select a Quiz - Ethical Hacking Concepts</title>
     <style>
-
         /* General Reset */
         * {
             margin: 0;
@@ -17,95 +17,102 @@
         body {
             font-family: 'Arial', sans-serif;
             background-image: url('Quiz/CSS/CEH.png'); /* Your image here */
-            background-size: cover; /* Cover the entire screen */
-            background-position: center; /* Center the image */
+            background-size: cover;
+            background-position: center;
             color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            padding: 0 20px;
+            min-height: 100vh;
+            padding: 20px;
         }
 
         /* Container to hold the content */
         .container {
-            background-color: rgba(248, 124, 16, 0); /* White background with transparency */
+            background-color: rgba(23, 23, 22, 0.8);
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             width: 100%;
             max-width: 800px;
+            text-align: center;
         }
 
         /* Title styling */
         h2 {
-            font-size: 24px;
+            font-size: 26px;
             color: #16ff0e;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-weight: 600;
-            text-align: center;
         }
 
         /* Flexbox for two columns */
         .quiz-list {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
 
         /* List of buttons for each column */
         .column {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
         }
 
         /* Button Styles */
         button {
-            background-color: #00000000;
-            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
             border: 2px solid #fff;
-            padding: 12px 24px;
+            padding: 14px 24px;
             font-size: 16px;
             border-radius: 8px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         button:hover {
             background-color: #ff0b0b;
-        }
-
-        button:focus {
-            outline: none;
+            transform: scale(1.05);
         }
 
         /* Special Button Styles */
         .special-buttons {
-            position: absolute;
-            top: 20px;
-            right: 20px;
             display: flex;
-            flex-direction: column;
-            gap: 10px;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
         }
 
         .special-button {
             background-color: #0a84ff;
             color: #ffffff;
-            border: none;
-            padding: 8px 16px;
-            font-size: 14px;
+            border: 2px solid #005bb5;
+            padding: 10px 20px;
+            font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         .special-button:hover {
             background-color: #005bb5;
+            transform: scale(1.05);
         }
 
-       /* Responsive Styling */
-       @media (max-width: 800px) {
+        /* Footer Section with Custom Text */
+        .footer {
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 14px;
+            color: #08de21;
+            text-align: center;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 800px) {
             .quiz-list {
                 flex-direction: column;
                 align-items: center;
@@ -121,81 +128,67 @@
             }
 
             .special-buttons {
-                position: static;
-                align-items: center;
-                margin-top: 20px;
+                flex-direction: column;
+                gap: 10px;
             }
-        }
-
-        /* Italic text at the bottom */
-        .footer {
-            margin-top: 30px;
-            font-style: italic;
-            font-size: 14px;
-            color: #08de21;
-            text-align: center;
         }
     </style>
 </head>
+
 <body>
-
     <div class="container">
-        <h2>The Concepts Of Ethical Hacking </h2>
-        
-         <!-- Special Buttons for Readme and Mock Tests -->
-         <div class="special-buttons">
-            <button class="special-button" onclick="window.location.href='readme.html'">Readme</button>
-            <button class="special-button" onclick="window.location.href='CEH Mock Tests.html'">Mock Tests</button>
-            <button class="special-button" onclick="window.location.href='https://medium.com/@Linuxlearners'">Medium Profile</button>
+        <h2>The Concepts Of Ethical Hacking</h2>
 
+        <!-- Two Columns of Quiz Links -->
+        <div class="quiz-list">
+            <!-- Left Column (Modules 1-10) -->
+            <div class="column">
+                <button onclick="window.location.href='Quiz/quiz1.html'">1. Introduction to Ethical Hacking</button>
+                <button onclick="window.location.href='Quiz/quiz2.html'">2. Footprinting and Reconnaissance</button>
+                <button onclick="window.location.href='Quiz/quiz3.html'">3. Scanning Networks</button>
+                <button onclick="window.location.href='Quiz/quiz4.html'">4. Enumeration</button>
+                <button onclick="window.location.href='Quiz/quiz5.html'">5. Vulnerability Analysis</button>
+                <button onclick="window.location.href='Quiz/quiz6.html'">6. System Hacking</button>
+                <button onclick="window.location.href='Quiz/quiz7.html'">7. Malware Threats</button>
+                <button onclick="window.location.href='Quiz/quiz8.html'">8. Sniffing</button>
+                <button onclick="window.location.href='Quiz/quiz9.html'">9. Social Engineering</button>
+                <button onclick="window.location.href='Quiz/quiz10.html'">10. Denial-of-Service</button>
+            </div>
+
+            <!-- Right Column (Modules 11-20) -->
+            <div class="column">
+                <button onclick="window.location.href='Quiz/quiz11.html'">11. Session Hijacking</button>
+                <button onclick="window.location.href='Quiz/quiz12.html'">12. Evading IDS, Firewalls, and Honeypots</button>
+                <button onclick="window.location.href='Quiz/quiz13.html'">13. Hacking Web Servers</button>
+                <button onclick="window.location.href='Quiz/quiz14.html'">14. Hacking Web Applications</button>
+                <button onclick="window.location.href='Quiz/quiz15.html'">15. SQL Injection</button>
+                <button onclick="window.location.href='Quiz/quiz16.html'">16. Hacking Wireless Networks</button>
+                <button onclick="window.location.href='Quiz/quiz17.html'">17. Hacking Mobile Platforms</button>
+                <button onclick="window.location.href='Quiz/quiz18.html'">18. IoT and OT Hacking</button>
+                <button onclick="window.location.href='Quiz/quiz19.html'">19. Cloud Computing</button>
+                <button onclick="window.location.href='Quiz/quiz20.html'">20. Cryptography</button>
+            </div>
         </div>
 
-       <!-- Two Columns of Quiz Links -->
-<div class="quiz-list">
-    <!-- Left Column (Modules 1-10) -->
-    <div class="column">
-        <button onclick="window.location.href='Quiz/quiz1.html'">1. Introduction to Ethical Hacking</button>
-        <button onclick="window.location.href='Quiz/quiz2.html'">2. Footprinting and Reconnaissance</button>
-        <button onclick="window.location.href='Quiz/quiz3.html'">3. Scanning Networks</button>
-        <button onclick="window.location.href='Quiz/quiz4.html'">4. Enumeration</button>
-        <button onclick="window.location.href='Quiz/quiz5.html'">5. Vulnerability Analysis</button>
-        <button onclick="window.location.href='Quiz/quiz6.html'">6. System Hacking</button>
-        <button onclick="window.location.href='Quiz/quiz7.html'">7. Malware Threats</button>
-        <button onclick="window.location.href='Quiz/quiz8.html'">8. Sniffing</button>
-        <button onclick="window.location.href='Quiz/quiz9.html'">9. Social Engineering</button>
-        <button onclick="window.location.href='Quiz/quiz10.html'">10. Denial-of-Service</button>
- 
+        <!-- Special Buttons for Mock Tests and Medium Profile -->
+        <div class="special-buttons">
+            <button class="special-button" onclick="window.location.href='readme.html'">Readme</button>
+
+            <button class="special-button" onclick="window.location.href='CEH Mock Tests.html'">Mock Tests</button>
+            
+            <button class="special-button" onclick="window.location.href='https://medium.com/@Linuxlearners'">Connect</button>
+        </div>
+
+        <!-- Footer Section with Custom Text -->
+        <p class="footer">
+            <strong>NOTE:</strong><br><br>
+            <span style="font-style: italic;">
+                These quizzes are designed to reinforce the concepts of Ethical Hacking. They have been created using AI technology to provide an effective practice experience.
+            </span>
+            <br><br>
+            <strong>____Credits to Linux Learners ____</strong>
+        </p>
     </div>
-
-    <!-- Right Column (Modules 11-20) -->
-    <div class="column">
-        <button onclick="window.location.href='Quiz/quiz11.html'">11. Session Hijacking</button>
-        <button onclick="window.location.href='Quiz/quiz12.html'">12. Evading IDS, Firewalls, and Honeypots</button>
-        <button onclick="window.location.href='Quiz/quiz13.html'">13. Hacking Web Servers</button>
-        <button onclick="window.location.href='Quiz/quiz14.html'">14. Hacking Web Applications</button>
-        <button onclick="window.location.href='Quiz/quiz15.html'">15. SQL Injection</button>
-        <button onclick="window.location.href='Quiz/quiz16.html'">16. Hacking Wireless Networks</button>
-        <button onclick="window.location.href='Quiz/quiz17.html'">17. Hacking Mobile Platforms</button>
-        <button onclick="window.location.href='Quiz/quiz18.html'">18. IoT and OT Hacking</button>
-        <button onclick="window.location.href='Quiz/quiz19.html'">19. Cloud Computing</button>
-        <button onclick="window.location.href='Quiz/quiz20.html'">20. Cryptography</button>
-    </div>
-</div>
-
-
-   <!-- Footer Section with Custom Text -->
-<p class="footer" style="text-align: center; margin-top: 30px;">
-    <strong>NOTE:</strong><br><br>
-    <span style="font-style: italic;">
-        These quizzes are designed to reinforce the concepts of Ethical Hacking. They have been created using AI technology to provide an effective practice experience.
-
-        
-    </span>  
-    <br><br>
-    <strong>____Credits to Kamal Varma @ https://medium.com/@Linuxlearners ____</strong>
-</p>
-
-
-
 </body>
+
 </html>
